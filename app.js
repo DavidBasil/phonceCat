@@ -5,9 +5,9 @@
 		.module('phonecatApp', [])
 		.controller('PhoneListController', PhoneListController)
 
-	phoneListController.$inject = ['$scope']
+	PhoneListController.$inject = ['$scope']
 
-	function phoneListController($scope){
+	function PhoneListController($scope){
 		$scope.phones = [
 			{
 				name: 'Nexus S',
