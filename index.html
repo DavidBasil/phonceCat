@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="phonecatApp">
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>PhoneCat</title>
 	<link rel="stylesheet" href="/assets/css/uikit.min.css" type="text/css">
 </head>
-<body>
-  
+<body ng-controller="PhoneListController">
+
+<div class="uk-container uk-margin-top">
+
+	<ul>
+		<li ng-repeat="phone in phones">
+			<span>{{phone.name}}</span>
+			<p>{{phone.snippet}}</p>
+		</li>
+	</ul>
+
+</div><!-- /uk-container -->
 
 
 <script src="/assets/js/jquery.js"></script>
-<script src="/assets/js/angular.js"></script>
 <script src="/assets/js/uikit.js"></script>
+<script src="/assets/js/angular.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
