@@ -20,7 +20,7 @@
 			}
 		}
 
-	angular.module('phonecatApp')
+	angular.module('phoneList')
 		.component('phoneList', phoneList)
 
 
