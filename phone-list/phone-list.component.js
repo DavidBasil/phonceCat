@@ -17,8 +17,9 @@
 					snippet: 'The Next, Next Generation tablet.'
 				}
 			]
+			this.orderProp = 'age'
 		}
-		}
+	}
 
 	angular.module('phoneList')
 		.component('phoneList', phoneList)
