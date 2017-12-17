@@ -11,8 +11,11 @@
 		</div><!-- /uk-width-1-5 -->
 		<div class="uk-width-4-5">
 			<ul class="phones">
-				<li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy: $ctrl.orderProp">
-					<span>{{phone.name}}</span>
+				<li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy: $ctrl.orderProp" class="uk-thumbnail">
+					<a href="#/phones/{{phone.id}}" class="uk-image">
+						<img ng-src="{{phone.imageUrl}}" alt="">
+					</a>
+					<a href="#/phones/{{phone.id}}">{{phone.name}}</a>
 					<p>{{phone.snippet}}</p>
 				</li>
 			</ul>
