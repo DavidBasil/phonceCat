@@ -2,7 +2,7 @@
 	'use strict'
 
 	angular
-		.module('phonecatApp', ['phoneList'])
+		.module('phonecatApp', ['ngRoute', 'phoneList', 'phoneDetail'])
 
 
 })()
